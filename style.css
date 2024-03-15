@@ -2,3 +2,54 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  /* grid-column-gap: 1em;
+  grid-row-gap: 1em; */
+
+  grid-gap: 1em;
+}
+
+.wrapper > div {
+  padding: 1em;
+  background-color: #eb7181;
+}
+
+.new_wrapper {
+  margin-top: 3em;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  /* grid-auto-rows: 150px; */
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.included {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: 80px;
+
+}
+
+.included > div {
+  background-color: darkorange;
+}
+
+.wrapper > div.light {
+  padding: 1em;
+  background-color: #edb1b9;
+}
+
+.new_wrapper > div {
+  padding: 1em;
+  background-color: orange;
+}
+
+.new_wrapper > div.two {
+  padding: 1em;
+  background-color: lightsalmon;
+}
